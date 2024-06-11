@@ -1,0 +1,62 @@
+name: stocks_app
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.5 <4.0.0'
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Dependency injection
+  get_it: ^7.6.7
+  injectable: ^2.3.2
+
+  # State management
+  flutter_riverpod: ^2.4.9
+  rxdart: ^0.27.7
+
+  # Code functionalities
+  dartz: ^0.10.1
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.9.0
+
+  # web services
+  dio: ^5.4.0
+  web_socket_channel: ^3.0.0
+
+  # Loader animation
+  shimmer_animation: ^2.1.0+1
+
+  flutter_dotenv: ^5.1.0
+
+  cupertino_icons: ^1.0.2
+
+  fl_chart: ^0.68.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+  build_runner: ^2.4.8
+  freezed: ^2.4.6
+  injectable_generator: ^2.4.1
+  json_serializable: ^6.7.1
+
+
+flutter:
+
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
+    - .env
