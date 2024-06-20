@@ -23,12 +23,12 @@ extension MapperListTradeSymbolDTO on List<TradeSymbolDTO> {
 extension MapperStockQuoteDTO on StockQuoteDTO {
   /// [StockQuoteDTO] (Infrastructure) to [StockQuote] (Domain)
   StockQuote toDomain() => StockQuote(
-        change: change,
+        change: change ?? 0,
         currentPrice: currentPrice,
         highPriceOfTheDay: highPriceOfTheDay,
         lowPriceOfTheDay: lowPriceOfTheDay,
         openPriceOfTheDay: openPriceOfTheDay,
-        percentChange: percentChange,
+        percentChange: percentChange ?? 0,
         previousClosePrice: previousClosePrice,
       );
 }

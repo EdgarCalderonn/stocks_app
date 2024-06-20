@@ -7,9 +7,9 @@ class StockQuoteDTO {
   @JsonKey(name: 'c')
   final double currentPrice;
   @JsonKey(name: 'd')
-  final double change;
+  final double? change;
   @JsonKey(name: 'dp')
-  final double percentChange;
+  final double? percentChange;
   @JsonKey(name: 'h')
   final double highPriceOfTheDay;
   @JsonKey(name: 'l')
